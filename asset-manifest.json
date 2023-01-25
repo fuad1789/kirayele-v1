@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kirayele-v1/static/css/main.3c644ce6.css",
+    "main.js": "/kirayele-v1/static/js/main.732eac03.js",
+    "index.html": "/kirayele-v1/index.html",
+    "main.3c644ce6.css.map": "/kirayele-v1/static/css/main.3c644ce6.css.map",
+    "main.732eac03.js.map": "/kirayele-v1/static/js/main.732eac03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c644ce6.css",
+    "static/js/main.732eac03.js"
+  ]
+}
