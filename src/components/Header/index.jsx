@@ -54,7 +54,7 @@ function Index() {
         <div className={styles.header}>
           <h1 className={styles.logo}>
             <Link style={{ textDecoration: "none", color: "#fff" }} to={"/"}>
-              Kirayələmeyebilersen.az
+              Kirayələ.az
             </Link>
           </h1>
           {screenWidth > 800 && (
