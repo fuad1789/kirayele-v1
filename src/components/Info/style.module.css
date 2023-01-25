@@ -1,0 +1,182 @@
+.container {
+  width: 100%;
+  padding: 0 3rem;
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #8d94ad;
+}
+
+.profile span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.profile p {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.profileL {
+  flex: 1;
+}
+.profileR {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profileR img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.content {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.text {
+  overflow-x: auto;
+  width: 40%;
+  max-height: 190px;
+}
+
+.ozellikler {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
+}
+.ozelliklerItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #8d94ad;
+  padding: 5px 0;
+}
+.itemTitle {
+  font-weight: 700;
+}
+.itemValue {
+}
+
+.elaqe {
+  position: fixed;
+  top: 110px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.4rem;
+  z-index: 12;
+}
+.tel {
+  background-color: #2d1ed9;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #fff !important;
+  position: relative;
+  right: -80%;
+  transition: all 0.3s ease-in-out;
+}
+.tel a {
+  color: #fff;
+  text-decoration: none;
+}
+.whatsapp {
+  background-color: #25d366;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  position: relative;
+  right: -80%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp:hover,
+.tel:hover {
+  right: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+  .content {
+    flex-direction: column;
+  }
+  .ozellikler {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .text {
+    width: 100%;
+  }
+  .profileR {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .elaqe {
+    position: relative;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .tel {
+    border-radius: 10px;
+    width: 45%;
+    right: 0;
+  }
+  .whatsapp {
+    border-radius: 10px;
+    width: 45%;
+    right: 0;
+  }
+  .whatsapp:hover,
+  .tel:hover {
+    right: 0;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 450px) {
+  .profileR {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .elaqe {
+    font-size: 1.2rem;
+  }
+}

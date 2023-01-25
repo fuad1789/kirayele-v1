@@ -1,0 +1,186 @@
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.register {
+  width: 100%;
+  height: 40px;
+  background-color: #f8f9fd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+.destek {
+  font-size: 1.5rem;
+}
+.registerBtn {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  background-color: #3bacb6;
+  color: #fff;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+.logo {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.filter {
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  color: #82dbd8;
+  display: flex;
+  font-size: 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+.select {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+.select p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.select span {
+  font-size: 1.8rem;
+}
+
+.tap {
+  width: 60px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #82dbd8;
+  font-size: 2.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.tap:hover {
+  color: #fff;
+  background-color: #259da8;
+  box-shadow: 0 0 5px #fff;
+}
+.tap:active {
+  transition: none;
+  box-shadow: none;
+}
+
+.containerR {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+.hearth {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.hearth:hover {
+  color: #d9242a;
+}
+
+.new {
+  background-color: #fff;
+  border: none;
+  color: #7ed321;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.new:hover {
+  background-color: #7ed321;
+  color: #fff;
+}
+.giris {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.MfilterBtn {
+  margin-top: 3px;
+}
+.mFilter {
+  position: absolute;
+  width: 100vh;
+  height: 30px;
+  background-color: #3bacb6;
+  bottom: -30px;
+}
+
+@media screen and (max-width: 850px) {
+  .giris {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .new {
+    background-color: transparent;
+    color: #fff;
+    font-size: 3rem;
+    padding: 0.1rem 0.5rem;
+  }
+  .new:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+  .filter {
+    width: 90%;
+    top: 70px;
+    border: 1px solid #82dbd8;
+    margin: 0 auto;
+  }
+  .tap:hover {
+    color: #259da8;
+    background-color: #fff;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    height: 90px;
+  }
+  .header {
+    height: 50px;
+  }
+  .filter {
+    top: 60px;
+  }
+}

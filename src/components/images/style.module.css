@@ -1,0 +1,128 @@
+.container {
+  width: 90%;
+  height: calc(100vh / 1.5);
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.title {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 2.7rem;
+  color: #000;
+  font-weight: 800;
+  text-shadow: 0 0 15px #fff;
+}
+.BigImage {
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.images {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: flex-end;
+}
+.image {
+  width: 49%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.butunSekillerBtn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3bacb6;
+  padding: 10px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  user-select: none;
+  color: #fff;
+}
+.butunSekliller {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 32;
+  overflow-y: auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.close {
+  font-size: 3rem;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.sekiller {
+  background-size: contain;
+}
+.img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1130px) {
+  .container {
+    height: calc(100vh / 1.5);
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    height: calc(100vh / 1.3);
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    background-color: black;
+    height: 65vh;
+  }
+  .butunSekliller img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 280px) {
+  .container {
+    height: 35vh;
+  }
+}
